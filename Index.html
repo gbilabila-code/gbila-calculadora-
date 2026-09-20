@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Meu App Matola</title>
+<style>
+body{font-family:sans-serif; text-align:center; padding:40px; background:#f0f4ff}
+h1{color:#1a73e8}
+button{background:#1a73e8; color:white; border:none; padding:15px 30px; font-size:18px; border-radius:10px}
+#msg{margin-top:20px; font-weight:bold; color:#333}
+</style>
+</head>
+<body>
+<h1>🚀 Meu primeiro app!</h1>
+<p>Feito em Matola no celular</p>
+<button onclick="clicou()">Clica aqui</button>
+<p id="msg"></p>
+
+<script>
+function clicou(){
+ document.getElementById('msg').innerHTML = "Funcionou! Agora sou dev 😎 - " + new Date().toLocaleTimeString();
+}
+</script>
+</body>
+</html>
